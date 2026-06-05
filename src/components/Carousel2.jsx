@@ -107,12 +107,11 @@ const Carousel2 = () => {
   const baseImageUrl = "https://ecommerce-backend-j9vh.onrender.com/images/";
 
   useEffect(() => {
-    axios
-      .get("${import.meta.env.VITE_API_URL")
-      .then((res) => setMobiles(res.data))
-      .catch((err) => console.error(err));
-  }, []);
-
+  axios
+    .get(`${import.meta.env.VITE_API_URL}/mobiles`)
+    .then((res) => setMobiles(res.data))
+    .catch((err) => console.error(err));
+}, []);
   useEffect(() => {
     if (mobiles.length === 0) return;
     const interval = setInterval(() => {
