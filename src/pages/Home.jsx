@@ -6,7 +6,7 @@ import image0 from '../assets/Images/image0.jpg';
 import InfoSection from '../components/InfoSection';
 import Carousel from '../components/Carousel';
 import Carousel2 from '../components/Carousel2';
-
+console.log("force rebuild");
 const Home = () => {
   return (
     <div className="bg-gray-50 pt-8 px-4 sm:px-6 lg:px-20 xl:px-32">
