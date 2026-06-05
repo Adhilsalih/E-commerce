@@ -145,7 +145,7 @@
 //         setLoading(true);
 //         try {
 //             if (selectedPaymentMethod === 'cod') {
-//                 const response = await fetch('http://localhost:3001/api/orders', {
+//                 const response = await fetch('https://ecommerce-backend-j9vh.onrender.com:3001/api/orders', {
 //                     method: 'POST',
 //                     headers: {
 //                         'Content-Type': 'application/json',
@@ -174,7 +174,7 @@
 //                 });
 
 //             } else if (selectedPaymentMethod === 'card') {
-//                 const response = await fetch('http://localhost:3001/api/create-razorpay-order', {
+//                 const response = await fetch('https://ecommerce-backend-j9vh.onrender.com:3001/api/create-razorpay-order', {
 //                     method: 'POST',
 //                     headers: {
 //                         'Content-Type': 'application/json',
@@ -201,7 +201,7 @@
 //                     description: 'Order Payment',
 //                     order_id,
 //                     handler: async function (response) {
-//                         const orderSaveResponse = await fetch('http://localhost:3001/api/orders', {
+//                         const orderSaveResponse = await fetch('https://ecommerce-backend-j9vh.onrender.com:3001/api/orders', {
 //                             method: 'POST',
 //                             headers: {
 //                                 'Content-Type': 'application/json',
@@ -272,7 +272,7 @@
 //                                     src={
 //                                         item.image?.startsWith('http')
 //                                             ? item.image
-//                                             : `http://localhost:3001/images/${item.image}`
+//                                             : `https://ecommerce-backend-j9vh.onrender.com:3001/images/${item.image}`
 //                                     }
 //                                     alt={item.title || item.name}
 //                                     className="w-16 h-16 object-cover rounded"
@@ -457,7 +457,7 @@
 //         try {
 //             if (selectedPaymentMethod === 'cod') {
 //                 // Logic for Cash on Delivery
-//                 const response = await fetch('http://localhost:3001/api/orders', {
+//                 const response = await fetch('https://ecommerce-backend-j9vh.onrender.com:3001/api/orders', {
 //                     method: 'POST',
 //                     headers: {
 //                         'Content-Type': 'application/json',
@@ -493,7 +493,7 @@
 //                 // Logic for Card Payment (Razorpay)
 
 //                 // 1. Create Razorpay Order on your backend
-//                 const response = await fetch('http://localhost:3001/api/create-razorpay-order', {
+//                 const response = await fetch('https://ecommerce-backend-j9vh.onrender.com:3001/api/create-razorpay-order', {
 //                     method: 'POST',
 //                     headers: {
 //                         'Content-Type': 'application/json',
@@ -529,7 +529,7 @@
 //                         console.log("Razorpay payment successful:", razorpayResponse);
 
 //                         // 3. Save the order details to your backend after successful payment
-//                         const orderSaveResponse = await fetch('http://localhost:3001/api/orders', {
+//                         const orderSaveResponse = await fetch('https://ecommerce-backend-j9vh.onrender.com:3001/api/orders', {
 //                             method: 'POST',
 //                             headers: {
 //                                 'Content-Type': 'application/json',
@@ -624,7 +624,7 @@
 //                                     src={
 //                                         item.image?.startsWith('http')
 //                                             ? item.image
-//                                             : `http://localhost:3001/images/${item.image}` // Assuming your backend serves images
+//                                             : `https://ecommerce-backend-j9vh.onrender.com:3001/images/${item.image}` // Assuming your backend serves images
 //                                     }
 //                                     alt={item.title || item.name || 'Product Image'}
 //                                     className="w-16 h-16 object-cover rounded"
@@ -776,7 +776,7 @@ const PaymentPage = () => {
             if (selectedPaymentMethod === 'cod') {
                 // --- FIX STARTS HERE FOR COD ---
                 console.log("Attempting to place COD order...");
-                const response = await fetch('http://localhost:3001/api/orders', {
+                const response = await fetch('https://ecommerce-backend-j9vh.onrender.com:3001/api/orders', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -814,7 +814,7 @@ const PaymentPage = () => {
                 // Logic for Card Payment (Razorpay) - This part was largely correct,
                 // assuming the Razorpay key mismatch was fixed.
                 console.log("Attempting to initiate card payment...");
-                const response = await fetch('http://localhost:3001/api/create-razorpay-order', {
+                const response = await fetch('https://ecommerce-backend-j9vh.onrender.com:3001/api/create-razorpay-order', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -844,7 +844,7 @@ const PaymentPage = () => {
                     handler: async function (razorpayResponse) {
                         console.log("Razorpay payment successful, saving order...", razorpayResponse);
                         try {
-                            const orderSaveResponse = await fetch('http://localhost:3001/api/orders', {
+                            const orderSaveResponse = await fetch('https://ecommerce-backend-j9vh.onrender.com:3001/api/orders', {
                                 method: 'POST',
                                 headers: {
                                     'Content-Type': 'application/json',
@@ -944,7 +944,7 @@ const PaymentPage = () => {
                                     src={
                                         item.image?.startsWith('http')
                                             ? item.image
-                                            : `http://localhost:3001/images/${item.image}`
+                                            : `https://ecommerce-backend-j9vh.onrender.com:3001/images/${item.image}`
                                     }
                                     alt={item.title || item.name || 'Product Image'}
                                     className="w-16 h-16 object-cover rounded"

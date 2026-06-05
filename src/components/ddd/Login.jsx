@@ -11,7 +11,7 @@ const Login = () => {
       const navigate=useNavigate
       const handleSubmit=(e)=>{
         e.preventDefault()
-        axios.post('http://localhost:3001/login',{email,password})
+        axios.post('https://ecommerce-backend-j9vh.onrender.com:3001/login',{email,password})
         .then(result=>console.log(result))
         .catch(err=>console.log(err))
         navigate('/home')

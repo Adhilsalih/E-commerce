@@ -197,7 +197,7 @@ const Contact = () => {
     setMessageType('');
 
     try {
-      const response = await axios.post('http://localhost:3001/api/contact', formData);
+      const response = await axios.post('https://ecommerce-backend-j9vh.onrender.com:3001/api/contact', formData);
 
       setFormData({
         name: '',

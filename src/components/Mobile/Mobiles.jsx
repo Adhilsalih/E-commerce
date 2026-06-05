@@ -13,10 +13,10 @@
 //   const [currentPage, setCurrentPage] = useState(1);
 //   const [mobilesPerPage] = useState(6); // You can adjust this number
 
-//   const baseImageUrl = "http://localhost:3001/images/";
+//   const baseImageUrl = "https://ecommerce-backend-j9vh.onrender.com:3001/images/";
 
 //   useEffect(() => {
-//     fetch("http://localhost:3001/mobiles")
+//     fetch("https://ecommerce-backend-j9vh.onrender.com:3001/mobiles")
 //       .then((res) => {
 //         if (!res.ok) throw new Error("Failed to fetch mobiles");
 //         return res.json();
@@ -272,10 +272,10 @@
 //   const [currentPage, setCurrentPage] = useState(1);
 //   const [mobilesPerPage] = useState(6); // You can adjust this number
 
-//   const baseImageUrl = "http://localhost:3001/images/";
+//   const baseImageUrl = "https://ecommerce-backend-j9vh.onrender.com:3001/images/";
 
 //   useEffect(() => {
-//     fetch("http://localhost:3001/mobiles")
+//     fetch("https://ecommerce-backend-j9vh.onrender.com:3001/mobiles")
 //       .then((res) => {
 //         if (!res.ok) throw new Error("Failed to fetch mobiles");
 //         return res.json();
@@ -536,10 +536,10 @@
 //   const [currentPage, setCurrentPage] = useState(1);
 //   const [mobilesPerPage] = useState(6);
 
-//   const baseImageUrl = "http://localhost:3001/images/";
+//   const baseImageUrl = "https://ecommerce-backend-j9vh.onrender.com:3001/images/";
 
 //   useEffect(() => {
-//     fetch("http://localhost:3001/mobiles")
+//     fetch("https://ecommerce-backend-j9vh.onrender.com:3001/mobiles")
 //       .then((res) => {
 //         if (!res.ok) throw new Error("Failed to fetch mobiles");
 //         return res.json();
@@ -770,12 +770,12 @@ function Mobiles() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
-  const baseImageUrl = "http://localhost:3001/images/";
+  const baseImageUrl = "https://ecommerce-backend-j9vh.onrender.com:3001/images/";
   const { addToCart } = useCart();
   const { addToWishlist } = useWishlist();
 
   useEffect(() => {
-    fetch("http://localhost:3001/mobiles")
+    fetch("https://ecommerce-backend-j9vh.onrender.com:3001/mobiles")
       .then(res => {
         if (!res.ok) throw new Error(`Error ${res.status}`);
         return res.json();

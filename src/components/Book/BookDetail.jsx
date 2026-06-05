@@ -8,12 +8,12 @@
 //   const [book, setBook] = useState(null);
 //   const [error, setError] = useState("");
 //   const [showCartMessage, setShowCartMessage] = useState(false);
-//   const baseImageUrl = "http://localhost:3001/images/";
+//   const baseImageUrl = "https://ecommerce-backend-j9vh.onrender.com:3001/images/";
 
 //   const { addToCart } = useCart(); // Use the addToCart function from context
 
 //   useEffect(() => {
-//     fetch(`http://localhost:3001/books/${id}`)
+//     fetch(`https://ecommerce-backend-j9vh.onrender.com:3001/books/${id}`)
 //       .then((res) => {
 //         if (!res.ok) throw new Error("Failed to fetch book");
 //         return res.json();
@@ -113,12 +113,12 @@ const BookDetail = () => {
   const [book, setBook] = useState(null);
   const [error, setError] = useState("");
   const [showCartMessage, setShowCartMessage] = useState(false);
-  const baseImageUrl = "http://localhost:3001/images/";
+  const baseImageUrl = "https://ecommerce-backend-j9vh.onrender.com:3001/images/";
 
   const { addToCart } = useCart();
 
   useEffect(() => {
-    fetch(`http://localhost:3001/books/${id}`)
+    fetch(`https://ecommerce-backend-j9vh.onrender.com:3001/books/${id}`)
       .then((res) => {
         if (!res.ok) throw new Error("Failed to fetch book");
         return res.json();
