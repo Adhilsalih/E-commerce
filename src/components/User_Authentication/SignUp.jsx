@@ -16,7 +16,7 @@ const SignUp = () => {
         setSuccess(''); // Clear previous success messages
 
         try {
-            const response = await axios.post('http://localhost:3001/register', {
+            const response = await axios.post('https://ecommerce-backend-j9vh.onrender.com:3001/register', {
                 username,
                 email,
                 password

@@ -10,13 +10,13 @@
 //   const [loading, setLoading] = useState(true);
 //   const [error, setError] = useState(null);
 //   const [showCartMessage, setShowCartMessage] = useState(false); // State for cart message
-//   const baseImageUrl = "http://localhost:3001/images/";
+//   const baseImageUrl = "https://ecommerce-backend-j9vh.onrender.com:3001/images/";
 
 //   // If you are using CartContext, uncomment the line below and the usage in handleAddToCart
 //   // const { addToCart } = useCart();
 
 //   useEffect(() => {
-//     fetch(`http://localhost:3001/fashions/${id}`)
+//     fetch(`https://ecommerce-backend-j9vh.onrender.com:3001/fashions/${id}`)
 //       .then((res) => {
 //         if (!res.ok) throw new Error("Failed to fetch fashion item");
 //         return res.json();
@@ -136,13 +136,13 @@ function FashionDetail() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [showCartMessage, setShowCartMessage] = useState(false); // State for cart message
-  const baseImageUrl = "http://localhost:3001/images/";
+  const baseImageUrl = "https://ecommerce-backend-j9vh.onrender.com:3001/images/";
 
   // If you are using CartContext, uncomment the line below and the usage in handleAddToCart
   const { addToCart } = useCart(); // Uncommented this line
 
   useEffect(() => {
-    fetch(`http://localhost:3001/fashions/${id}`)
+    fetch(`https://ecommerce-backend-j9vh.onrender.com:3001/fashions/${id}`)
       .then((res) => {
         if (!res.ok) throw new Error("Failed to fetch fashion item");
         return res.json();

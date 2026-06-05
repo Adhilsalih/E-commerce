@@ -15,7 +15,7 @@ const Login = () => {
         setSuccess(''); // Clear previous success messages
 
         try {
-            const response = await axios.post('http://localhost:3001/login', {
+            const response = await axios.post('https://ecommerce-backend-j9vh.onrender.com:3001/login', {
                 email,
                 password
             });

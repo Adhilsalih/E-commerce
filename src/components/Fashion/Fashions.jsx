@@ -25,10 +25,10 @@
 //   const [currentPage, setCurrentPage] = useState(1);
 //   const [itemsPerPage] = useState(6); // You can adjust this number
 
-//   const baseImageUrl = "http://localhost:3001/images/";
+//   const baseImageUrl = "https://ecommerce-backend-j9vh.onrender.com:3001/images/";
 
 //   useEffect(() => {
-//     fetch("http://localhost:3001/fashions")
+//     fetch("https://ecommerce-backend-j9vh.onrender.com:3001/fashions")
 //       .then((res) => {
 //         if (!res.ok) throw new Error("Network response was not ok");
 //         return res.json();
@@ -225,12 +225,12 @@
 //   const [currentPage, setCurrentPage] = useState(1);
 //   const [itemsPerPage] = useState(6); // You can adjust this number
 
-//   const baseImageUrl = "http://localhost:3001/images/";
+//   const baseImageUrl = "https://ecommerce-backend-j9vh.onrender.com:3001/images/";
 //     const { addToCart } = useCart();
 //   const { addToWishlist } = useWishlist(); // Use the context hook
 
 //   useEffect(() => {
-//     fetch("http://localhost:3001/fashions")
+//     fetch("https://ecommerce-backend-j9vh.onrender.com:3001/fashions")
 //       .then((res) => {
 //         if (!res.ok) throw new Error("Network response was not ok");
 //         return res.json();
@@ -457,12 +457,12 @@ function Fashion() {
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage] = useState(6); // You can adjust this number
 
-  const baseImageUrl = "http://localhost:3001/images/";
+  const baseImageUrl = "https://ecommerce-backend-j9vh.onrender.com:3001/images/";
   const { addToCart } = useCart(); // Destructure addToCart
   const { addToWishlist } = useWishlist(); // Destructure addToWishlist
 
   useEffect(() => {
-    fetch("http://localhost:3001/fashions")
+    fetch("https://ecommerce-backend-j9vh.onrender.com:3001/fashions")
       .then((res) => {
         if (!res.ok) throw new Error(`Network response was not ok, status: ${res.status}`);
         return res.json();
