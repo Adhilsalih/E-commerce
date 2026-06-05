@@ -21,12 +21,12 @@ const AllProductsPage = () => {
   ];
 
   const categoryEndpoints = {
-    Fashions: 'https://ecommerce-backend-j9vh.onrender.com:3001/fashions',
-    Books: 'https://ecommerce-backend-j9vh.onrender.com:3001/books',
-    Products: 'https://ecommerce-backend-j9vh.onrender.com:3001/products',
-    Groceries: 'https://ecommerce-backend-j9vh.onrender.com:3001/groceries',
-    Mobiles: 'https://ecommerce-backend-j9vh.onrender.com:3001/mobiles',
-    Sports: 'https://ecommerce-backend-j9vh.onrender.com:3001/sports', // fixed typo
+    Fashions: 'https://https://ecommerce-backend-j9vh.onrender.com/fashions',
+    Books: 'https://https://ecommerce-backend-j9vh.onrender.com/books',
+    Products: 'https://https://ecommerce-backend-j9vh.onrender.com/products',
+    Groceries: 'https://https://ecommerce-backend-j9vh.onrender.com/groceries',
+    Mobiles: 'https://https://ecommerce-backend-j9vh.onrender.com/mobiles',
+    Sports: 'https://https://ecommerce-backend-j9vh.onrender.com/sports', // fixed typo
   };
 
   useEffect(() => {

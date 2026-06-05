@@ -19,12 +19,12 @@ const AllProductsPage = () => {
           mobilesRes,
           sportsRes
         ] = await Promise.all([
-          axios.get('https://ecommerce-backend-j9vh.onrender.com:3001/fashions'),
-          axios.get('https://ecommerce-backend-j9vh.onrender.com:3001/books'),
-          axios.get('https://ecommerce-backend-j9vh.onrender.com:3001/products'),
-          axios.get('https://ecommerce-backend-j9vh.onrender.com:3001/groceries'),
-          axios.get('https://ecommerce-backend-j9vh.onrender.com:3001/mobiles'),
-          axios.get('https://ecommerce-backend-j9vh.onrender.com:3001/sports')
+          axios.get('https://https://ecommerce-backend-j9vh.onrender.com/fashions'),
+          axios.get('https://https://ecommerce-backend-j9vh.onrender.com/books'),
+          axios.get('https://https://ecommerce-backend-j9vh.onrender.com/products'),
+          axios.get('https://https://ecommerce-backend-j9vh.onrender.com/groceries'),
+          axios.get('https://ecommerce-backend-j9vh.onrender.com/mobiles'),
+          axios.get('https://https://ecommerce-backend-j9vh.onrender.com/sports')
         ]);
 
         const allFetchedProducts = [

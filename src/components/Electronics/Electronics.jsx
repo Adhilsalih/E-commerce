@@ -19,12 +19,12 @@ function Electronics() {
   const [currentPage, setCurrentPage] = useState(1);
   const [productsPerPage] = useState(6);
 
-  const baseImageUrl = "https://ecommerce-backend-j9vh.onrender.com:3001/images/";
+  const baseImageUrl = "https://https://ecommerce-backend-j9vh.onrender.com/images/";
   const { addToCart } = useCart();
   const { addToWishlist } = useWishlist();
 
   useEffect(() => {
-    fetch("https://ecommerce-backend-j9vh.onrender.com:3001/products")
+    fetch("https://https://ecommerce-backend-j9vh.onrender.com/products")
       .then((res) => {
         if (!res.ok) throw new Error("Network response was not ok");
         return res.json();
@@ -237,12 +237,12 @@ export default Electronics;
 //   const [currentPage, setCurrentPage] = useState(1);
 //   const [productsPerPage] = useState(6);
 
-//   const baseImageUrl = "https://ecommerce-backend-j9vh.onrender.com:3001/images/";
+//   const baseImageUrl = "https://https://ecommerce-backend-j9vh.onrender.com/images/";
 //   const { addToCart } = useCart();
 //   const { addToWishlist } = useWishlist();
 
 //   useEffect(() => {
-//     fetch("https://ecommerce-backend-j9vh.onrender.com:3001/products")
+//     fetch("https://https://ecommerce-backend-j9vh.onrender.com/products")
 //       .then((res) => {
 //         if (!res.ok) throw new Error("Network response was not ok");
 //         return res.json();
