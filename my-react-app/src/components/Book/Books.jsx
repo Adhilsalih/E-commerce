@@ -533,7 +533,7 @@ function Books() {
           {currentBooks.map((book) => (
             <div
               key={book._id || book.id} // Use book.id as fallback for key if _id is not present
-              className="relative rounded-lg p-4 shadow-md bg-white border border-gray-200 hover:shadow-lg transition transform duration-300 ease-in-out"
+              className="relative rounded-lg p-4 shadow-md  border-gray-200 hover:shadow-lg transition transform duration-300 ease-in-out"style={{backgroundColor:"lightcyan"}}
             >
               {/* This Link wraps the image and title, so clicking them navigates to the detail page */}
               <Link to={`/books/${book._id || book.id}`}>
@@ -588,7 +588,7 @@ function Books() {
                   </svg>
                 </button>
                 <button
-                  className="inline-flex items-center gap-2 bg-yellow-500 text-white px-4 py-2 rounded-lg font-semibold shadow-md hover:bg-yellow-600 transition"
+                  className="mt-3 inline-flex items-center gap-2 bg-yellow-500 text-white px-4 py-2 rounded-lg font-semibold shadow-md hover:bg-yellow-600 transition"
                   onClick={() => { // Removed e.preventDefault() as button is outside Link
                     addToWishlist(book); // Call addToWishlist
                     alert(`Added ${book.title || 'book'} to wishlist!`);
