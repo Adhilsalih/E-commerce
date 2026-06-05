@@ -16,7 +16,7 @@ const SignUp = () => {
         setSuccess(''); // Clear previous success messages
 
         try {
-            const response = await axios.post('https://https://ecommerce-backend-j9vh.onrender.com/register', {
+            const response = await axios.post('https://ecommerce-backend-j9vh.onrender.com/register', {
                 username,
                 email,
                 password

@@ -152,12 +152,12 @@ function ElectronicsDetail() {
   const [error, setError] = useState(null);
   const [showCartMessage, setShowCartMessage] = useState(false);
 
-  const baseImageUrl = "https://https://ecommerce-backend-j9vh.onrender.com/images/";
+  const baseImageUrl = "https://ecommerce-backend-j9vh.onrender.com/images/";
 
   const { addToCart } = useCart();
 
   useEffect(() => {
-    fetch(`https://https://ecommerce-backend-j9vh.onrender.com/products/${id}`)
+    fetch(`https://ecommerce-backend-j9vh.onrender.com/products/${id}`)
       .then((res) => {
         if (!res.ok) {
           throw new Error("Failed to fetch product details");

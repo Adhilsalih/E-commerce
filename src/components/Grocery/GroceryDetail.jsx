@@ -144,13 +144,13 @@ function GroceryDetail() {
   const [error, setError] = useState(null);
   const [showCartMessage, setShowCartMessage] = useState(false); // State for cart message
 
-  const baseImageUrl = "https://https://ecommerce-backend-j9vh.onrender.com/images/";
+  const baseImageUrl = "https://ecommerce-backend-j9vh.onrender.com/images/";
 
   // FIX: Uncomment the line below
   const { addToCart } = useCart();
 
   useEffect(() => {
-    fetch(`https://https://ecommerce-backend-j9vh.onrender.com/groceries/${id}`)
+    fetch(`https://ecommerce-backend-j9vh.onrender.com/groceries/${id}`)
       .then((res) => {
         if (!res.ok) {
           throw new Error("Network response was not ok");

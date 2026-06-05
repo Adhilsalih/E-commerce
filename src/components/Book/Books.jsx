@@ -440,12 +440,12 @@ function Books() {
   const [currentPage, setCurrentPage] = useState(1);
   const [booksPerPage] = useState(6); // You can adjust this number
 
-  const baseImageUrl = "https://https://ecommerce-backend-j9vh.onrender.com/images/";
+  const baseImageUrl = "https://ecommerce-backend-j9vh.onrender.com/images/";
   const { addToCart } = useCart(); // Destructure addToCart
   const { addToWishlist } = useWishlist(); // Destructure addToWishlist
 
   useEffect(() => {
-    fetch("https://https://ecommerce-backend-j9vh.onrender.com/books")
+    fetch("https://ecommerce-backend-j9vh.onrender.com/books")
       .then((res) => {
         if (!res.ok) throw new Error(`Network response was not ok, status: ${res.status}`);
         return res.json();

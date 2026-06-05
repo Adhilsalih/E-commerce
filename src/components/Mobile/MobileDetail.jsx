@@ -120,13 +120,13 @@ const MobileDetail = () => {
   const [mobile, setMobile] = useState(null);
   const [error, setError] = useState("");
   const [showCartMessage, setShowCartMessage] = useState(false); // State for cart message
-  const baseImageUrl = "https://https://ecommerce-backend-j9vh.onrender.com/images/";
+  const baseImageUrl = "https://ecommerce-backend-j9vh.onrender.com/images/";
 
   // If you are using CartContext, uncomment the line below and the usage in handleAddToCart
   const { addToCart } = useCart(); // Uncommented this line
 
   useEffect(() => {
-    fetch(`https://https://ecommerce-backend-j9vh.onrender.com/mobiles/${id}`)
+    fetch(`https://ecommerce-backend-j9vh.onrender.com/mobiles/${id}`)
       .then((res) => {
         if (!res.ok) throw new Error("Failed to fetch mobile");
         return res.json();

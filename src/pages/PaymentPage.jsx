@@ -776,7 +776,7 @@ const PaymentPage = () => {
             if (selectedPaymentMethod === 'cod') {
                 // --- FIX STARTS HERE FOR COD ---
                 console.log("Attempting to place COD order...");
-                const response = await fetch('https://https://ecommerce-backend-j9vh.onrender.com/api/orders', {
+                const response = await fetch('https://ecommerce-backend-j9vh.onrender.com/api/orders', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -814,7 +814,7 @@ const PaymentPage = () => {
                 // Logic for Card Payment (Razorpay) - This part was largely correct,
                 // assuming the Razorpay key mismatch was fixed.
                 console.log("Attempting to initiate card payment...");
-                const response = await fetch('https://https://ecommerce-backend-j9vh.onrender.com/api/create-razorpay-order', {
+                const response = await fetch('https://ecommerce-backend-j9vh.onrender.com/api/create-razorpay-order', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json',
@@ -844,7 +844,7 @@ const PaymentPage = () => {
                     handler: async function (razorpayResponse) {
                         console.log("Razorpay payment successful, saving order...", razorpayResponse);
                         try {
-                            const orderSaveResponse = await fetch('https://https://ecommerce-backend-j9vh.onrender.com/api/orders', {
+                            const orderSaveResponse = await fetch('https://ecommerce-backend-j9vh.onrender.com/api/orders', {
                                 method: 'POST',
                                 headers: {
                                     'Content-Type': 'application/json',
@@ -944,7 +944,7 @@ const PaymentPage = () => {
                                     src={
                                         item.image?.startsWith('http')
                                             ? item.image
-                                            : `https://https://ecommerce-backend-j9vh.onrender.com/images/${item.image}`
+                                            : `https://ecommerce-backend-j9vh.onrender.com/images/${item.image}`
                                     }
                                     alt={item.title || item.name || 'Product Image'}
                                     className="w-16 h-16 object-cover rounded"

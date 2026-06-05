@@ -8,7 +8,7 @@ const Carousel = () => {
   const [products, setProducts] = useState([]);
 
   useEffect(() => {
-    axios.get('https://https://ecommerce-backend-j9vh.onrender.com/fashions')
+    axios.get('https://ecommerce-backend-j9vh.onrender.com/fashions')
       .then(res => setProducts(res.data))
       .catch(err => console.log(err));
   }, []);

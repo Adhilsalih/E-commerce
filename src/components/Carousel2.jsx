@@ -104,11 +104,11 @@ import axios from "axios";
 const Carousel2 = () => {
   const [mobiles, setMobiles] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const baseImageUrl = "https://https://ecommerce-backend-j9vh.onrender.com/images/";
+  const baseImageUrl = "https://ecommerce-backend-j9vh.onrender.com/images/";
 
   useEffect(() => {
     axios
-      .get("https://https://ecommerce-backend-j9vh.onrender.com/mobiles")
+      .get("https://ecommerce-backend-j9vh.onrender.com/mobiles")
       .then((res) => setMobiles(res.data))
       .catch((err) => console.error(err));
   }, []);

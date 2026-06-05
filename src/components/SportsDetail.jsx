@@ -128,12 +128,12 @@ const SportsDetail = () => {
   const [item, setItem] = useState(null);
   const [error, setError] = useState('');
   const [showCartMessage, setShowCartMessage] = useState(false); // State for cart message
-  const baseImageUrl = "https://https://ecommerce-backend-j9vh.onrender.com/images/";
+  const baseImageUrl = "https://ecommerce-backend-j9vh.onrender.com/images/";
 
   const { addToCart } = useCart(); // Destructure addToCart from useCart()
 
   useEffect(() => {
-    fetch(`https://https://ecommerce-backend-j9vh.onrender.com/sports/${id}`)
+    fetch(`https://ecommerce-backend-j9vh.onrender.com/sports/${id}`)
       .then((res) => {
         if (!res.ok) throw new Error('Failed to fetch item');
         return res.json();
