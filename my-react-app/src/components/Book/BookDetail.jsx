@@ -147,7 +147,7 @@ const BookDetail = () => {
     );
 
   return (
-    <div className="min-h-screen bg-gray-100 flex items-center justify-center py-10 px-4">
+    <div className="min-h-screen flex items-center justify-center py-10 px-4" style={{backgroundColor:"lightblue"}}>
       <div className="max-w-4xl w-full bg-white rounded-lg shadow-lg p-8 flex flex-col md:flex-row gap-8">
         {/* Book Image */}
         <div className="relative rounded-lg overflow-hidden border border-gray-200 md:w-1/2 flex-shrink-0">
