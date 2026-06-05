@@ -136,13 +136,13 @@ function FashionDetail() {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
   const [showCartMessage, setShowCartMessage] = useState(false); // State for cart message
-  const baseImageUrl = "https://https://ecommerce-backend-j9vh.onrender.com/images/";
+  const baseImageUrl = "https://ecommerce-backend-j9vh.onrender.com/images/";
 
   // If you are using CartContext, uncomment the line below and the usage in handleAddToCart
   const { addToCart } = useCart(); // Uncommented this line
 
   useEffect(() => {
-    fetch(`https://https://ecommerce-backend-j9vh.onrender.com/fashions/${id}`)
+    fetch(`https://ecommerce-backend-j9vh.onrender.com/fashions/${id}`)
       .then((res) => {
         if (!res.ok) throw new Error("Failed to fetch fashion item");
         return res.json();

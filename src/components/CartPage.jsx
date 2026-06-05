@@ -168,7 +168,7 @@ const CartPage = () => {
                   src={
                     item.image?.startsWith("http")
                       ? item.image
-                      : `https://https://ecommerce-backend-j9vh.onrender.com/images/${item.image}`
+                      : `https://ecommerce-backend-j9vh.onrender.com/images/${item.image}`
                   }
                   alt={item.title || item.product || item.item || item.name}
                   className="w-20 h-20 object-cover rounded-lg border border-gray-200"
