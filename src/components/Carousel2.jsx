@@ -108,7 +108,7 @@ const Carousel2 = () => {
 
   useEffect(() => {
     axios
-      .get("https://ecommerce-backend-j9vh.onrender.com/mobiles")
+      .get("${import.meta.env.VITE_API_URL")
       .then((res) => setMobiles(res.data))
       .catch((err) => console.error(err));
   }, []);
