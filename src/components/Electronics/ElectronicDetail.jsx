@@ -16,14 +16,14 @@
 //   const [showCartMessage, setShowCartMessage] = useState(false); // State to control cart confirmation message
 
 //   // Base URL for images, assuming your backend serves them from this path
-//   const baseImageUrl = "https://ecommerce-backend-j9vh.onrender.com:3001/images/";
+//   const baseImageUrl = "https://https://ecommerce-backend-j9vh.onrender.com/images/";
 
 //   // If you are using a CartContext, you'd initialize it here:
 //   // const { addToCart } = useCart(); 
 
 //   // useEffect hook to fetch product details when the component mounts or 'id' changes
 //   useEffect(() => {
-//     fetch(`https://ecommerce-backend-j9vh.onrender.com:3001/products/${id}`)
+//     fetch(`https://https://ecommerce-backend-j9vh.onrender.com/products/${id}`)
 //       .then((res) => {
 //         // Check if the network response was successful
 //         if (!res.ok) {
@@ -152,12 +152,12 @@ function ElectronicsDetail() {
   const [error, setError] = useState(null);
   const [showCartMessage, setShowCartMessage] = useState(false);
 
-  const baseImageUrl = "https://ecommerce-backend-j9vh.onrender.com:3001/images/";
+  const baseImageUrl = "https://https://ecommerce-backend-j9vh.onrender.com/images/";
 
   const { addToCart } = useCart();
 
   useEffect(() => {
-    fetch(`https://ecommerce-backend-j9vh.onrender.com:3001/products/${id}`)
+    fetch(`https://https://ecommerce-backend-j9vh.onrender.com/products/${id}`)
       .then((res) => {
         if (!res.ok) {
           throw new Error("Failed to fetch product details");

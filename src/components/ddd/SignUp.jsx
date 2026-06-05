@@ -11,7 +11,7 @@ const SignUp = () => {
       const navigate=useNavigate
       const handleSubmit=(e)=>{
         e.preventDefault()
-        axios.post('https://ecommerce-backend-j9vh.onrender.com:3001/login',{name,email,password})
+        axios.post('https://https://ecommerce-backend-j9vh.onrender.com/login',{name,email,password})
         .then(result=>console.log(result))
         .catch(err=>console.log(err))
         navigate('/login')

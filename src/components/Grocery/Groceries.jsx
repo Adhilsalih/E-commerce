@@ -15,13 +15,13 @@ function Groceries() {
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage] = useState(6); // You can adjust this number
 
-  const baseImageUrl = "https://ecommerce-backend-j9vh.onrender.com:3001/images/";
+  const baseImageUrl = "https://https://ecommerce-backend-j9vh.onrender.com/images/";
 
   const { addToCart } = useCart();
   const { addToWishlist } = useWishlist(); // Destructure addToWishlist
 
   useEffect(() => {
-    fetch("https://ecommerce-backend-j9vh.onrender.com:3001/groceries")
+    fetch("https://https://ecommerce-backend-j9vh.onrender.com/groceries")
       .then((res) => {
         if (!res.ok) throw new Error("Network response was not ok");
         return res.json();
@@ -269,13 +269,13 @@ export default Groceries;
 //   const [currentPage, setCurrentPage] = useState(1);
 //   const [itemsPerPage] = useState(6);
 
-//   const baseImageUrl = "https://ecommerce-backend-j9vh.onrender.com:3001/images/";
+//   const baseImageUrl = "https://https://ecommerce-backend-j9vh.onrender.com/images/";
 
 //   const { addToCart } = useCart();
 //   const { addToWishlist } = useWishlist();
 
 //   useEffect(() => {
-//     fetch("https://ecommerce-backend-j9vh.onrender.com:3001/groceries")
+//     fetch("https://https://ecommerce-backend-j9vh.onrender.com/groceries")
 //       .then((res) => {
 //         if (!res.ok) throw new Error("Network response was not ok");
 //         return res.json();

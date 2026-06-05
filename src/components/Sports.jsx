@@ -13,12 +13,12 @@
 //   const [currentPage, setCurrentPage] = useState(1);
 //   const [itemsPerPage] = useState(6); // You can adjust this number
 
-//   const baseImageUrl = "https://ecommerce-backend-j9vh.onrender.com:3001/images/";
+//   const baseImageUrl = "https://https://ecommerce-backend-j9vh.onrender.com/images/";
 //   const { addToCart } = useCart();
 //   const { addToWishlist } = useWishlist(); // Destructure addToWishlist
 
 //   useEffect(() => {
-//     fetch("https://ecommerce-backend-j9vh.onrender.com:3001/sports")
+//     fetch("https://https://ecommerce-backend-j9vh.onrender.com/sports")
 //       .then((res) => {
 //         if (!res.ok) throw new Error("Network response was not ok");
 //         return res.json();
@@ -234,12 +234,12 @@ function Sports() {
   const [currentPage, setCurrentPage] = useState(1);
   const [itemsPerPage] = useState(6); // You can adjust this number
 
-  const baseImageUrl = "https://ecommerce-backend-j9vh.onrender.com:3001/images/";
+  const baseImageUrl = "https://https://ecommerce-backend-j9vh.onrender.com/images/";
   const { addToCart } = useCart(); // Destructure addToCart from useCart()
   const { addToWishlist } = useWishlist();
 
   useEffect(() => {
-    fetch("https://ecommerce-backend-j9vh.onrender.com:3001/sports")
+    fetch("https://https://ecommerce-backend-j9vh.onrender.com/sports")
       .then((res) => {
         if (!res.ok) throw new Error("Network response was not ok");
         return res.json();

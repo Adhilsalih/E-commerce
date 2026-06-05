@@ -5,11 +5,11 @@
 // function Carousel2() {
 //   const [mobiles, setMobiles] = useState([]);
 //   const [currentIndex, setCurrentIndex] = useState(0);
-//   const baseImageUrl = "https://ecommerce-backend-j9vh.onrender.com:3001/images/";
+//   const baseImageUrl = "https://https://ecommerce-backend-j9vh.onrender.com/images/";
 
 //   useEffect(() => {
 //     axios
-//       .get("https://ecommerce-backend-j9vh.onrender.com:3001/mobiles")
+//       .get("https://https://ecommerce-backend-j9vh.onrender.com/mobiles")
 //       .then((res) => setMobiles(res.data))
 //       .catch((err) => console.error(err));
 //   }, []);
@@ -104,11 +104,11 @@ import axios from "axios";
 const Carousel2 = () => {
   const [mobiles, setMobiles] = useState([]);
   const [currentIndex, setCurrentIndex] = useState(0);
-  const baseImageUrl = "https://ecommerce-backend-j9vh.onrender.com:3001/images/";
+  const baseImageUrl = "https://https://ecommerce-backend-j9vh.onrender.com/images/";
 
   useEffect(() => {
     axios
-      .get("https://ecommerce-backend-j9vh.onrender.com:3001/mobiles")
+      .get("https://https://ecommerce-backend-j9vh.onrender.com/mobiles")
       .then((res) => setMobiles(res.data))
       .catch((err) => console.error(err));
   }, []);
